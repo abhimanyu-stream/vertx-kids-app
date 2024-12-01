@@ -13,8 +13,8 @@ public class KidsApplication {
 
 
     // Create an instance of the MainApp
-    KidsAppInstaller app = new KidsAppInstaller();
-    //KidsAppInstallerWithUpdateCheckAndMarkScheduledForInstallation app = new KidsAppInstallerWithUpdateCheckAndMarkScheduledForInstallation();
+    //KidsAppInstaller app = new KidsAppInstaller();
+    KidsAppInstallerWithUpdateCheckAndMarkScheduledForInstallation app = new KidsAppInstallerWithUpdateCheckAndMarkScheduledForInstallation();
     vertx.deployVerticle(app, res -> {
       if (res.succeeded()) {
         System.out.println("Verticle deployed successfully");

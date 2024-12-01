@@ -52,8 +52,10 @@ public class KidsAppInstallerWithUpdateCheckAndMarkScheduledForInstallation exte
     mailClient = MailClient.createShared(vertx, mailConfig);
     // Start periodic version check
     //vertx.setPeriodic(60000, timerId -> fetchAndUpdateLatestVersionsForAllApp());
-    fetchAndUpdateLatestVersionsForAllApp();
-    //processApps(startPromise);
+
+
+    //fetchAndUpdateLatestVersionsForAllApp();
+    processApps(startPromise);
   }
 
 
